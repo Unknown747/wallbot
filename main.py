@@ -4,11 +4,11 @@ import requests
 import simplejson
 import traceback
 from pprint import pprint
-w3 = Web3(Web3.HTTPProvider("https://eth-mainnet.g.alchemy.com/v2/cVoH6Tl8hMagXnCBYRb3cl7wxj7TXbCu"))
+w3 = Web3(Web3.HTTPProvider("https://eth-mainnet.g.alchemy.com/v2/RDD59kNPCeQii3iLPJs8AGehGm_bwss6"))
 checkedList=[]
 def sendToTelegram(words):
-	botToken=""# YOUR BOT TOKEN
-	chatId=""#Your Channel
+	botToken="7281541789:AAH53UuI3ElzM4TiUIx139xbPGtZIBS8Wpw"# YOUR BOT TOKEN
+	chatId="1708124942"#Your Channel
 	data="from bot : "+words
 	url="https://api.telegram.org/bot"+botToken+"/sendMessage"
 	requests.get(url, params = {"chat_id": chatId,"text":data})
